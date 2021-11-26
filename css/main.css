@@ -96,11 +96,16 @@ footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 header nav {
@@ -108,12 +113,22 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 45%;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 .form-description {
@@ -138,6 +153,14 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.features article {
+  width: 55%;
+}
+
+.features p {
+  margin: 0;
 }
 
 .features .features-items {
@@ -182,9 +205,18 @@ aside {
   flex-flow: row wrap;
 }
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
+}
+
+footer p {
+  margin: 0;
 }
 
 
