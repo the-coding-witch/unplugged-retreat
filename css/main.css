@@ -96,6 +96,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #ffffff;
 }
 
 ul,
@@ -108,14 +109,22 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1, 
+h2,
+h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
 }
 
-h3, h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8em;
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 p {
@@ -134,13 +143,18 @@ address {
   font-style: normal;
 }
 
-.content-wrapper {
-
+header,
+footer {
+  background-color: #202322;
 }
 
+aside {
+  background-color: #527158;
+}
 
-
-
+.reviews {
+  background-color: #2a423a;
+}
 
 /***************MOBILE*****************/
 
@@ -243,6 +257,8 @@ footer .copyright {
 
 /**************MB HERO AREA**********************/
 
+
+
 .hero-area {
   display: flex;
   width: 90%;
@@ -257,6 +273,32 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /**************MB FEATURES**********************/
@@ -508,6 +550,10 @@ aside .content-wrapper .form {
 
 /**************TB REVIEWS******************/
 
+.reviews {
+  border: solid #2a423a 1px;
+}
+
 .reviews .content-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -678,7 +724,7 @@ aside .form-description p {
   width: 25%;
 }
 
-/************ DT FEATURES**************/
+/************DT FEATURES**************/
 
 .features .content-wrapper {
   display: flex;
@@ -703,6 +749,10 @@ aside .form-description p {
 }
 
 /**************DT REVIEWS******************/
+
+.reviews {
+  border: solid #2a423a 1px;
+}
 
 .reviews .content-wrapper {
   display: flex;
