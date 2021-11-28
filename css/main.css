@@ -87,19 +87,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/**********HEADER AND FOOTER**********/
+/***************MOBILE*****************/
 
 .content-wrapper {
   width: 90%;
-  margin: 50px 0;
+  margin: 50px auto;
 }
+
+/**********HEADER AND FOOTER**********/
 
 header,
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
 }
 
 header {
@@ -121,17 +123,14 @@ header .content-wrapper {
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 60%;
+  width: 42%;
+  padding-right: 50px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 footer {
@@ -139,8 +138,29 @@ footer {
 }
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 55%;
   margin: 50px 0;
+}
+
+.footer-content .contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+address {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-size: normal;
+}
+
+.footer-content .social {
+  display: flex;
+  justify-content: center;
 }
 
 footer .contact {
@@ -167,13 +187,17 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/***************MOBILE*****************/
+/**************MB HERO AREA**********************/
 
 .hero-area {
   display: flex;
-  justify-content: center;
+  width: 90%;
   flex-flow: row wrap;
+  align-items: center;
+  border: solid black 3px;
 }
+
+/**************MB ASIDE**********************/
 
 aside {
   display: flex;
@@ -181,6 +205,8 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
+
+/**************MB FEATURES**********************/
 
 .features {
   display: flex;
@@ -208,6 +234,8 @@ aside {
   margin: 0;
 }
 
+/**************MB REVIEWS**********************/
+
 .reviews h2 {
   margin-bottom: 40px;
 }
@@ -217,7 +245,7 @@ aside {
   margin: 20px 0;
 }
 
-/***************ABOUT PAGE*******************/
+/***************MB ABOUT PAGE*******************/
 
 .mission {
   display: flex;
@@ -226,18 +254,27 @@ aside {
   flex-flow: row wrap;
 }
 
-.contact-section {
+.contact-section .general-info,
+.contact-section .chat {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+  width: 90%;
 }
 
-.contact-content p {
-  margin: 0;
+address {
+  font-style: normal;
 }
 
-/***************FAQ PAGE*********************/
+.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+}
+
+/***************MB FAQ PAGE*********************/
+
 .faq {
   display: flex;
   justify-content: center;
@@ -349,30 +386,33 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px)  {
 /***************TABLET STYLES****************/
 
 .content-wrapper {
   max-width: 640px;
-  margin: 100px 0;
+  margin: 100px auto;
 }
 
-/********HEADER*********/     
+/********TB HEADER*********/     
 
 header {
   justify-content: space-around;
 }
 
 header .content-wrapper {
-  width: 100%;
+  display: flex;
+  width: 83%;
   justify-content: space-between;
 }
 
 header nav {
-  width: 20%;
+  width: 18%;
 }
 
 header nav ul {
+  display: flex;
+  list-style-type: none;
   justify-content: space-between;
 }
 
@@ -380,11 +420,15 @@ header nav ul {
   display: none;
 }
 
-/********HERO AREA************/
+/********TB HERO AREA************/
 
+.hero-area {
+  display: flex;
+  width: 60%;
+  margin-left: 200px;
+}
 
-
-/************ASIDE*************/
+/************TB ASIDE*************/
 
 aside .content-wrapper {
   margin: 50px 0;
@@ -399,7 +443,7 @@ aside .content-wrapper .form {
   margin: 0;
 }
 
-/************FEATURES**************/
+/************TB FEATURES**************/
 
 .features article {
   display: flex;
@@ -413,21 +457,41 @@ aside .content-wrapper .form {
   width: 50%;
 }
 
-/**************REVIEWS******************/
+/**************TB REVIEWS******************/
 
-.reviews article {
+.reviews .content-wrapper {
   display: flex;
+  flex-flow: row wrap;
+  width: 60%;
   justify-content: space-between;
+  margin-left: 200px;
 }
 
-.reviews article div {
-  width: 50%
+.reviews h2 {
+  margin-bottom: 100px;
 }
 
-/************FOOTER***************/
+.reviews .info h3 {
+  display: flex;
+  width: 100%;
+}
+
+.reviews .reviews-items {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews .reviews-items article {
+  display: flex;
+  margin-right: 50px;
+  width: 30%;
+  justify-content: center;  
+}
+
+/************TB FOOTER***************/
 
 footer .content-wrapper {
-  width: 65%;
+  width: 60%;
   margin: 100px 0;
 }
 
@@ -437,41 +501,289 @@ footer .content-wrapper {
   align-items: center;
 }
 
-footer .contact {
-  margin-bottom: 0;
-}
-
 footer .copyright {
-  width: 100%
+  display: flex;
+  width: 60%;
+  justify-content: center;
 }
 
-/**********ABOUT PAGE***********/
+/**********TB ABOUT PAGE***********/
 
-.misstion-content {
+.mission-content {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-/***************FAQ PAGE****************/
+.mission-content p {
+  display: flex;
+  flex-flow: row wrap;
+  width: 42%;
+}
 
-.faq .content-wrapper {
+.contact-info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
   justify-content: space-between;
 }
 
+.contact-section .general-info,
+.contact-section .chat {
+  display: flex;  
+  flex-flow: row wrap;
+  width: 42%;
+}
+
+address {
+  font-style: normal;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;  
+  width: 90%;
+}
+
+.footer-content .contact,
+.footer-content .social {
+  display: flex;
+  flex-flow: row wrap;  
+  width: 35%;
+}
+
+/***************TB FAQ PAGE****************/
+
+.faq .content-wrapper {
+  display: flex;
+  margin: 10 auto;
+  flex-flow: row wrap;
+  width: 83%;
+}
+
 .faq-content {
-  flex-basis: 45%
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
-.faq h2 {
-  width: 100%;
-}
+.faq .faq-content article {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
 }
 
-  @media screen and (min-width: 1260px) {
+.faq-content h1 {
+  display: flex;
+  width: 90%;
+}
+
+}
+
+@media screen and (min-width: 1260px) {
 /***************DESKTOP STYLES****************/
 
-  }
+.content-wrapper {
+  max-width: 960px;
+  margin: 100px auto;
+}
+
+/********DT HEADER*********/     
+
+header .content-wrapper {
+  display: flex;
+  width: 76%;
+  justify-content: space-between;
+}
+
+header nav {
+  width: 12%;
+  
+}
+
+header nav ul {
+  justify-content: space-between;
+  list-style-type: none; 
+}
+
+.header-divider {
+  display: none;
+}
+
+/**********DT HERO AREA*************/
+
+.hero-area {
+  display: flex;
+  width: 50%;
+  justify-items: flex-start;
+}
+
+/************DT ASIDE*************/
+
+aside .content-wrapper {
+  display: flex;
+  width: 60%;
+  flex-wrap: row wrap;
+  justify-content: center;
+}
+
+aside .form-description p {
+  width: 25%;
+}
+
+/************ DT FEATURES**************/
+
+.features .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+.features h2 {
+  margin-bottom: 100px;
+}
+
+.features .features-items article {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.features .features-items article p {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**************DT REVIEWS******************/
+
+.reviews .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.reviews h2 {
+  margin-bottom: 100px;
+}
+
+.reviews .info h3 {
+  display: flex;
+  width: 100%;
+}
+
+.reviews .reviews-items {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews .reviews-items article {
+  display: flex;
+  margin-right: 50px;
+  width: 30%;
+  justify-content: center;  
+}
+
+/************DT FOOTER***************/
+
+footer .content-wrapper {
+  width: 60%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .copyright {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+
+/**********DT ABOUT PAGE***********/
+
+
+.mission-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mission-content p {
+  display: flex;
+  flex-flow: row wrap;
+  width: 42%;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.contact-section .general-info,
+.contact-section .chat {
+  display: flex;  
+  flex-flow: row wrap;
+  width: 42%;
+}
+
+address {
+  font-style: normal;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;  
+  width: 90%;
+}
+
+.footer-content .contact,
+.footer-content .social {
+  display: flex;
+  flex-flow: row wrap;  
+  width: 35%;
+}
+
+/***************DT FAQ PAGE****************/
+
+
+.faq .content-wrapper {
+  display: flex;
+  margin: 10 auto;
+  flex-flow: row wrap;
+  width: 83%;
+}
+
+.faq-content {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.faq .faq-content article {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+}
+
+.faq-content h1 {
+  display: flex;
+  width: 90%;
+}
+
+}
+
+
 
 /* ==========================================================================
    Print styles.
