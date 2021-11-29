@@ -181,20 +181,20 @@ header {
   padding: 15px 0;
 }
 
-header figure {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -205,16 +205,21 @@ header .content-wrapper {
 
 header nav {
   display: flex;
-  width: 75%;
-  margin-left: -30px;
+  font-weight: 700;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
-  list-style-type: none;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
@@ -342,6 +347,8 @@ input[type=button] {
 
 .features article {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   width: 65%;
   margin: 30px 0;
 }
@@ -352,8 +359,13 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features .features-items p {
-  text-align: center;
+.features .features-items p  {
+  text-align: center;  
+}
+
+.features .features-items i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /**************MB REVIEWS**********************/
@@ -598,10 +610,14 @@ header nav ul {
 
 /********TB HERO AREA************/
 
+.hero .content-wrapper {
+  margin-top: 0;
+  justify-content: flex-start;
+}
+
 .hero-area {
-  display: flex;
-  width: 60%;
-  margin-left: 200px;
+  width: 80%;
+  margin-top: 60px;
 }
 
 /************TB ASIDE*************/
