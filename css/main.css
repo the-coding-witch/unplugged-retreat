@@ -189,12 +189,9 @@ header .content-wrapper {
   margin: 0;
 }
 
-header figure {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+header .content-wrapper figure {
+  width: 90%;
+  padding-left: 15px;
 }
 
 .header-divider {
@@ -203,23 +200,23 @@ header figure {
   margin: 10px 0 20px 0;
 }
 
-header nav {
+header .content-wrapper nav {
   display: flex;
-  font-weight: 700;
-  justify-content: space-around;
-  align-items: center;
+  font-weight: 900;
   flex-flow: row wrap;
-  width: 60%;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
 }
 
-header nav ul li {
-  font-size: 1.125em;
+header .content-wrapper nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-right: 25px;
+  width: 100%;
+}
+
+header .content-wrapper nav ul li {
+   font-size: 1.125em;
 }
 
 footer {
@@ -269,6 +266,34 @@ footer .social-icons p {
 
 footer p {
   margin: 0;
+}
+
+footer .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer .social p {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .social .social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+footer .social .social-icons p {
+  width: 40px;
+  height: 40px;
+  background-color: #527158;
+  border-radius: 50%;
 }
 
 footer .copyright {
@@ -465,7 +490,12 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
+}
+
+.faq {
+  background-color: #527158;
+  
 }
 
 .faq h2 {
@@ -584,17 +614,13 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
-header figure {
+header .content-wrapper figure {
   width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
-header nav {
+header .content-wrapper nav {
   display: flex;
-  width: 25%;
+  width: 35%;
 }
 
 header nav ul {
@@ -739,22 +765,27 @@ footer .copyright {
 .contact-info {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .contact-section .general-info,
 .contact-section .chat {
-  display: flex;  
-  flex-flow: row wrap;
-  width: 42%;
+  width: 40%;  
+}
+
+.contact-section .general-info address,
+.contact-section .chat  {
+  font-size: .8em;
 }
 
 .footer-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;  
-  width: 90%;
+  width: 100%;
+  align-items: baseline;
+  
 }
 
 .footer-content .contact,
@@ -808,7 +839,7 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
-header figure {
+header .content-wrapper figure {
   width: 23%;
   display: flex;
   justify-content: center;
@@ -816,7 +847,7 @@ header figure {
   flex-flow: row wrap;
 }
 
-header nav {
+header .content-wrapper nav {
   display: flex;
   width: 18%;
 }
@@ -932,6 +963,7 @@ footer .copyright {
 /**********DT ABOUT PAGE***********/
 
 
+
 .mission-content {
   display: flex;
   flex-flow: row wrap;
@@ -960,38 +992,44 @@ footer .copyright {
   top: 0; 
   left: 0; 
 }
-
 .contact-info {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
 }
 
-.contact-section .general-info,
-.contact-section .chat {
-  display: flex;  
-  flex-flow: row wrap;
-  width: 42%;
-}
-
-footer .content-wrapper {
-  width: 60%;
-  margin: 100px 0;
+.contact-info .general-info address,
+.contact-info .chat address {
+  font-size: 1.1em;
 }
 
 .footer-content {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;  
+  align-items: baseline;
+  width: 76%;
+}
+
+.footer-content .contact,
+.footer-content .social {
+  display: flex;
+  flex-flow: row wrap;  
   justify-content: space-between;
+  width: 25%;
+}
+
+.footer-content .contact address{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
 }
 
-footer .copyright {
-  display: flex;
-  width: 60%;
-  justify-content: center;
-}
 /***************DT FAQ PAGE****************/
+
+
 
 
 .faq .content-wrapper {
